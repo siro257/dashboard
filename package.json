@@ -41,6 +41,7 @@
     "msw": "^0.35.0",
     "parcel": "^2.0.0",
     "prettier": "^2.3.2",
+    "process": "^0.11.10",
     "tailwindcss": "^2.2.7",
     "whatwg-fetch": "^3.6.2"
   },
