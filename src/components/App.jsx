@@ -4,8 +4,9 @@ import Header from "./layout/Header";
 import { UserProvider } from "../context/UserConext";
 import { Route, Switch } from "react-router";
 import Home from "./pages/Home";
-import ErrorBoundary from "./base/ErrorBoundary";
 import Reviews from "./pages/Reviews";
+import Sales from "./pages/Sales";
+import ErrorBoundary from "./base/ErrorBoundary";
 
 function App() {
   return (
@@ -14,7 +15,11 @@ function App() {
         <Layout>
           <Header />
           <Switch>
-            <Route path="/sales"></Route>
+            <Route path="/sales">
+              <ErrorBoundary>
+                <Sales />
+              </ErrorBoundary>
+            </Route>
             <Route path="/reviews">
               <ErrorBoundary>
                 <Reviews />
